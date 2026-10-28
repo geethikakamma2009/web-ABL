@@ -1,0 +1,237 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f9f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #176b45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 5px 0 15px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #d8f3dc;
+    text-decoration: underline;
+}
+
+/* Home Section */
+.hero {
+    background: linear-gradient(120deg, #d8f3dc, #b7e4c7);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h2 {
+    font-size: 34px;
+    color: #176b45;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #176b45;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0d4d31;
+    transform: translateY(-3px);
+}
+
+/* All Sections */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #176b45;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Food Categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category {
+    background-color: white;
+    width: 220px;
+    padding: 22px 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #d5dfd2;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.category:hover {
+    background-color: #e0f2df;
+    transform: translateY(-5px);
+}
+
+/* Recipe Cards */
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px #d5dfd2;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 18px #b9cbb5;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #176b45;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.card b {
+    color: #27834a;
+}
+
+/* Meal Plan and Health Tips */
+.meal-plan {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 30px;
+    border-left: 5px solid #27834a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #d5dfd2;
+}
+
+.meal-plan p {
+    padding: 8px;
+    border-bottom: 1px solid #e5eee2;
+}
+
+.meal-plan p:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    background-color: #124d32;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 20px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin: 5px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    section {
+        padding: 25px 12px;
+    }
+
+    .card, .category {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .meal-plan {
+        padding: 15px;
+    }
+}

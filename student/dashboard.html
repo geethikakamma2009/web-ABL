@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Student Portal</h2>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#profile">Student Details</a>
+            <a href="#results">Semester Results</a>
+            <a href="#attendance">Attendance</a>
+            <a href="#subjects">Subjects</a>
+            <a href="#exams">Exam Schedule</a>
+            <a href="#announcements">Announcements</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header id="dashboard">
+                <h1>Student Dashboard</h1>
+                <p>Welcome back, Geethika!</p>
+            </header>
+
+            <!-- Student Details -->
+            <section id="profile">
+                <h2>Student Details</h2>
+                <div class="card">
+                    <p><b>Name:</b> K. Geethika</p>
+                    <p><b>Roll Number:</b> CSM.5.001</p>
+                    <p><b>Department:</b> CSM</p>
+                    <p><b>Year:</b> First Year</p>
+                    <p><b>Semester:</b> First Semester</p>
+                </div>
+            </section>
+
+            <!-- Summary Cards -->
+            <section>
+                <h2>Academic Overview</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Subjects</h3>
+                        <p class="number">6</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Attendance</h3>
+                        <p class="number">85%</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Semester GPA</h3>
+                        <p class="number">8.5</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Semester Results -->
+            <section id="results">
+                <h2>Semester Results</h2>
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>88</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Physics</td>
+                        <td>82</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>91</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>85</td>
+                        <td>A</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Attendance -->
+            <section id="attendance">
+                <h2>Attendance Percentage</h2>
+
+                <div class="card">
+                    <p>Mathematics - 90%</p>
+                    <progress value="90" max="100"></progress>
+
+                    <p>Physics - 80%</p>
+                    <progress value="80" max="100"></progress>
+
+                    <p>Programming - 95%</p>
+                    <progress value="95" max="100"></progress>
+
+                    <p>English - 75%</p>
+                    <progress value="75" max="100"></progress>
+                </div>
+            </section>
+
+            <!-- Subjects -->
+            <section id="subjects">
+                <h2>Subject Information</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Mathematics</h3>
+                        <p>Subject Code: M101</p>
+                        <p>Credits: 4</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Physics</h3>
+                        <p>Subject Code: P101</p>
+                        <p>Credits: 3</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Programming</h3>
+                        <p>Subject Code: C101</p>
+                        <p>Credits: 4</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Examination Schedule -->
+            <section id="exams">
+                <h2>Examination Schedule</h2>
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>10-12-2026</td>
+                        <td>9:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Physics</td>
+                        <td>12-12-2026</td>
+                        <td>9:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>15-12-2026</td>
+                        <td>9:30 AM</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Announcements -->
+            <section id="announcements">
+                <h2>Announcements</h2>
+                <div class="card announcement">
+                    <p>📢 Internal examination timetable is available.</p>
+                    <p>📢 Complete your programming assignments on time.</p>
+                    <p>📢 Maintain the required attendance in all subjects.</p>
+                </div>
+            </section>
+
+            <footer>
+                <p>Student Dashboard | Academic Year 2026-27</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
