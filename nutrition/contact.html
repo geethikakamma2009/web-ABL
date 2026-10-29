@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Bites - Contact</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🥗 Healthy Bites</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="meal-plan.html">Meal Plan</a>
+        <a href="nutrition-tips.html">Nutrition Tips</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Contact Us</h1>
+        <p>Have a recipe suggestion or feedback?
+        Send us a message using the form below.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80"
+         alt="Healthy meal">
+</section>
+
+<main>
+    <h2>Send a Message</h2>
+
+    <form onsubmit="alert('Thank you for your message! This is a demo form.'); return false;">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="topic">Message Topic</label>
+        <select id="topic" name="topic">
+            <option>Recipe Suggestion</option>
+            <option>Website Feedback</option>
+            <option>General Question</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message"
+                  placeholder="Write your message here"
+                  required></textarea>
+
+        <button class="btn" type="submit">Submit Message</button>
+    </form>
+
+    <p class="small">Note: This is a demonstration form and
+    does not send data to a server.</p>
+</main>
+
+<footer>
+    <p>© 2026 Healthy Bites</p>
+    <a href="index.html">Back to Home</a>
+</footer>
+
+</body>
+</html>
